@@ -1,4 +1,4 @@
-#Lazy loading
+# Lazy loading
 ```java
 .
 // Java code to explain double check locking 
@@ -32,4 +32,26 @@ public class GFG
   } 
 } 
 ```
-#Inner class
+# Inner class
+```java
+// Java code for Bill Pugh Singleton Implementaion 
+public class GFG  
+{ 
+  
+  private GFG()  
+  { 
+    // private constructor 
+  } 
+  
+  // Inner class to provide instance of class 
+  private static class BillPughSingleton 
+  { 
+    private static final GFG INSTANCE = new GFG(); 
+  } 
+  
+  public static GFG getInstance()  
+  { 
+    return BillPughSingleton.INSTANCE; 
+  } 
+} 
+```
