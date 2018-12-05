@@ -1,6 +1,5 @@
 # Lazy loading
 ```java
-.
 // Java code to explain double check locking 
 public class GFG  
 { 
