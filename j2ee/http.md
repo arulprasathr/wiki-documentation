@@ -1,4 +1,5 @@
-# The format of the HTTP request and HTTP response messages are similar and will have following structure −
+# HTTP Request and Response
+The format of the HTTP request and HTTP response messages are similar and will have following structure −
 
 - An initial status line + CRLF ( Carriage Return + Line Feed i.e. New Line )
 - Zero or more header lines + CRLF
