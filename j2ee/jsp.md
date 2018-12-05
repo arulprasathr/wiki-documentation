@@ -1,4 +1,4 @@
-# Servlet lifecycle
+# JSP lifecycle
 
 - First the HTTP requests coming to the server are delegated to the servlet container.
 
