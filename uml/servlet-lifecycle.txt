@@ -1,9 +1,20 @@
 @startuml
 
-title Components - Component Diagram
+title Servlet lifecycle
 
-[Business Logic]
-[Data Access] as DA  
-component [Graphic User\nInterface] as GUI
+entity "Browser" as B
+database "Web Server" as WS
+
+entity "Servlet Container" as SC
+entity "Servlet" as S
+
+B --> WS : Sends a HTTP request with a Servlet
+WS --> SC : Delegates the HTTP Request to the Servlet Container
+SC --> S : Loads the Servlet
+S --> S : init()
+S --> S : service()
+S --> WS : Sends the response with the HTTP code
+WS --> B : Browser renders the response in the UI
+S --> S : destroy()
 
 @enduml
