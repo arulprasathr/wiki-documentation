@@ -12,3 +12,10 @@ You can write the XML equivalent of the above syntax as follows −
    code fragment
 </jsp:scriptlet>
 ```
+## S.No.	Directive & Description
+
+|Directive | Description|
+|-----|---|
+|<%@ page ... %> | Defines page-dependent attributes, such as scripting language, error page, and buffering requirements.|
+|<%@ include ... %> | Includes a file during the translation phase.|
+|<%@ taglib ... %> | Declares a tag library, containing custom actions, used in the page|
