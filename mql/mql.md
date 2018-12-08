@@ -19,29 +19,29 @@ MQL<3>eval expr ' count true ' on temp query bus "Part" * * where " originated >
 
 ## To find the number business objects that are connected to a business object.
 ```mql
-MQL<3>eval expr ' count true ' on expand bus Part PRT-001 1;
+MQL<4>eval expr ' count true ' on expand bus Part PRT-001 1;
 ```
 7
 
 ## To know the current context
 ```mql
-MQL<4>print context;
+MQL<5>print context;
 ```
 context vault eService Production person Test Everything
 
 ## To know how many users connected to eMatrix (sesssions).
 ```mql
-MQL<13>sessions;
+MQL<6>sessions;
 ```
 
 ## To monitor memory usage...
 ```mql
-MQL<21>monitor memory
+MQL<7>monitor memory
 ```
 
 ## To know version of the software installed...
 ```mql
-MQL<22>version;
+MQL<8>version;
 ```
 V6R2009x
 
